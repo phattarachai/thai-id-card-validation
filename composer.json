@@ -1,0 +1,32 @@
+{
+  "name": "phattarachai/thai-id-card-validation",
+  "description": "A Laravel and PHP package for validating Thai ID Card",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Phattarachai Chaimongkol",
+      "email": "phatchai28@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.13",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phattarachai\\ThaiIdCardValidation\\": "src"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT"
+}
