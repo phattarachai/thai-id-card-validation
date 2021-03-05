@@ -59,7 +59,7 @@ class ThaiIdCardRule extends Rule
 
 # การใช้งานใน PHP (นอก Laravel Project)
 
-ถ้าต้องการตรวจสอบรหัสบัตรประชาชนใน PHP หรือ Framework อื่น ๆ ที่ไม่ใช่ Laravel สามารถทำได้ผ่าน class ThaiIdCard
+ถ้าต้องการตรวจสอบรหัสบัตรประชาชนใน PHP หรือ Framework อื่น ๆ ที่ไม่ใช่ Laravel สามารถทำได้ผ่าน class `ThaiIdCard`
 
 ```php
 use Phattarachai\ThaiIdCardValidation\ThaiIdCard;
