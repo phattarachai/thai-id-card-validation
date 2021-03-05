@@ -1,6 +1,8 @@
-![test](https://github.com/phattarachai/thaidate/actions/workflows/php.yml/badge.svg)
-[![Packagist](https://img.shields.io/packagist/dt/phattarachai/thaidate.svg)](https://github.com/phattarachai/line-notify/releases)
-[![Maintainability](https://api.codeclimate.com/v1/badges/866379571541812960f6/maintainability)](https://codeclimate.com/github/phattarachai/thaidate/maintainability)
+[comment]: <> (![test]&#40;https://github.com/phattarachai/thaidate/actions/workflows/php.yml/badge.svg&#41;)
+
+[comment]: <> ([![Packagist]&#40;https://img.shields.io/packagist/dt/phattarachai/thaidate.svg&#41;]&#40;https://github.com/phattarachai/thaidate/releases&#41;)
+
+[comment]: <> ([![Maintainability]&#40;https://api.codeclimate.com/v1/badges/866379571541812960f6/maintainability&#41;]&#40;https://codeclimate.com/github/phattarachai/thaidate/maintainability&#41;)
 
 # <a id="introduction"></a> 🔒 Thai ID Card Laravel Validation
 
@@ -9,12 +11,12 @@
 # <a id="installation"></a> ติดตั้ง
 
 ```
-composer require phattarachai/thai-id-card-velidation
+composer require phattarachai/thai-id-card-validation
 ```
 
 # <a id="usage"></a> การใช้งาน
 
-เรียกใช้คลาส ThaiIdCardRule ใน field ที่ต้องการ validate
+เรียกใช้ class ThaiIdCardRule ใน field ที่ต้องการ validate
 
 ```php
 use Phattarachai\ThaiIdCardValidation\ThaiIdCardRule;
@@ -27,6 +29,9 @@ $this->validate($request, [
 ]);
 
 ```
+
+หากต้องการตัวอย่างเลขรหัสบัตรประชาชน
+สามารถทำได้ที่ [เครื่องมือสุ่มรหัสบัตรประชาชน](https://phattarachai.dev/tools/thai-id-card-generator)
 
 # <a id="usage"></a> Validation Message
 
