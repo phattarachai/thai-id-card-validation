@@ -16,7 +16,7 @@ composer require phattarachai/thai-id-card-validation
 
 # <a id="usage"></a> การใช้งาน
 
-เรียกใช้ class ThaiIdCardRule ใน field ที่ต้องการ validate
+เรียกใช้ class `ThaiIdCardRule` ใน field ที่ต้องการ validate
 
 ```php
 use Phattarachai\ThaiIdCardValidation\ThaiIdCardRule;
