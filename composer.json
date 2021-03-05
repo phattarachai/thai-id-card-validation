@@ -2,6 +2,11 @@
   "name": "phattarachai/thai-id-card-validation",
   "description": "A Laravel and PHP package for validating Thai ID Card",
   "type": "library",
+  "keywords": [
+    "Laravel",
+    "Thai",
+    "validation"
+  ],
   "authors": [
     {
       "name": "Phattarachai Chaimongkol",

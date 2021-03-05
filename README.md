@@ -30,8 +30,8 @@ $this->validate($request, [
 
 ```
 
-หากต้องการตัวอย่างเลขรหัสบัตรประชาชน
-สามารถทำได้ที่ [เครื่องมือสุ่มรหัสบัตรประชาชน](https://phattarachai.dev/tools/thai-id-card-generator)
+หากต้องการตัวอย่างเลขรหัสบัตรประชาชนเพื่อใช้ทดสอบระบบ
+สามารถไปได้ที่ [เครื่องมือสุ่มรหัสบัตรประชาชน](https://phattarachai.dev/tools/thai-id-card-generator)
 
 # <a id="usage"></a> Validation Message
 
