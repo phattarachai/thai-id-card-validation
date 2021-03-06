@@ -1,6 +1,6 @@
-[comment]: <> (![test]&#40;https://github.com/phattarachai/thaidate/actions/workflows/php.yml/badge.svg&#41;)
+![test](https://github.com/phattarachai/thai-id-card-validation/actions/workflows/php.yml/badge.svg)
+[![Packagist](https://img.shields.io/packagist/dt/phattarachai/thai-id-card-validation.svg)](https://github.com/phattarachai/thai-id-card-validation/releases)
 
-[comment]: <> ([![Packagist]&#40;https://img.shields.io/packagist/dt/phattarachai/thaidate.svg&#41;]&#40;https://github.com/phattarachai/thaidate/releases&#41;)
 
 [comment]: <> ([![Maintainability]&#40;https://api.codeclimate.com/v1/badges/866379571541812960f6/maintainability&#41;]&#40;https://codeclimate.com/github/phattarachai/thaidate/maintainability&#41;)
 
