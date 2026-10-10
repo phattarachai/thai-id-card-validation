@@ -1,0 +1,60 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+
+# Each category both renders a section of the notes and votes on the next version number;
+# the highest `semver-increment` across every matching category wins, and `patch` is the
+# floor when nothing matches. `when:` + `semver-increment:` replace the `labels:` /
+# `version-resolver:` shapes, which release-drafter v7 warns about and v8 removes.
+categories:
+  - title: 'Added'
+    semver-increment: 'minor'
+    when:
+      labels: ['feature', 'enhancement']
+  - title: 'Fixed'
+    semver-increment: 'patch'
+    when:
+      labels: ['fix', 'bug']
+  - title: 'Changed'
+    semver-increment: 'patch'
+    when:
+      labels: ['change', 'refactor']
+  - title: 'Documentation'
+    semver-increment: 'patch'
+    when:
+      labels: ['docs']
+  - title: 'Maintenance'
+    semver-increment: 'patch'
+    when:
+      labels: ['chore', 'dependencies']
+
+  # Bump-only rules: these decide the version but render no section of their own.
+  - type: 'version-resolver'
+    semver-increment: 'major'
+    when:
+      labels: ['major', 'breaking']
+  - type: 'version-resolver'
+    semver-increment: 'minor'
+    when:
+      labels: ['minor']
+  - type: 'version-resolver'
+    semver-increment: 'patch'
+    when:
+      labels: ['patch']
+
+change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
+change-title-escapes: '\<*_&'
+
+autolabeler:
+  - label: 'docs'
+    files: ['**/*.md']
+  - label: 'fix'
+    title: ['/^fix(\(.*\))?:/i']
+  - label: 'feature'
+    title: ['/^feat(\(.*\))?:/i']
+  - label: 'chore'
+    title: ['/^(chore|style|ci|build)(\(.*\))?:/i']
+
+template: |
+  $CHANGES
+
+  **Full changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
